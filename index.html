@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>WSDM '18 Workshop: Task based Approaches for Understanding User Interactions (Task IR)</title>
-  <meta name="description" content="WSDM '18 Workshop: Task based Approaches for Understanding User Interactions (Task IR)">  
+  <title>WSDM '18 Workshop: Learning from User Interactions</title>
+  <meta name="description" content="WSDM '18 Workshop: Learning from User Interactions (Learn-IR)">  
   
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -28,13 +28,14 @@
       <div class="navbar navbar-fixed-top" id="navbar">
         <div class="navbar-inner">
           <div class="container">
-            <a class="navbar-brand" href="#">Task-IR Workshop</a>
+            <a class="navbar-brand" href="#">Learn-IR Workshop</a>
             <ul class="nav navbar-nav">
               <li><a href="#basic-information">Overview</a></li>
-              <li><a href="#speakers-affliations">Keynote Speakers</a></li>
               <li><a href="#topics">Topics</a></li>
+              <li><a href="#speakers-affliations">Keynote Speakers</a></li>
               <li><a href="#dates">Important Dates</a></li>
               <li><a href="#submission">Submission</a></li>
+              <li><a href="#program">Program</a></li>
               <li><a href="#organizers">Organizers</a></li>
             </ul>
           </div>
@@ -42,57 +43,91 @@
       </div>
 
       <h3>WSDM 2018 Workshop</h3>
-      <h2 id="slides">Task-IR: Task based Approaches for Understanding User Interactions</h2>
+      <h2 id="slides">Learn-IR: Learning from User Interactions</h2>
       
       
 	
       <h2 id="basic-information">Overview</h2>
 
-      <p>Search behavior, and information behavior more generally, is often motivated by tasks that prompt search processes that are often lengthy, iterative, and intermittent, and are characterized by distinct stages, shifting goals and multitasking. Current search systems do not provide adequate support for users tackling complex tasks due to which the cognitive burden of keeping track of such tasks is placed on the searcher. Developing a comprehensive understanding of user’s tasks would help in providing better support and recommendations to users based on their contextual information and as a result, help users accomplish the task. </p>
+      <p>
+        While users interact with online services (e.g. search engines, recommender systems, conversational agents), they leave behind fine grained traces of interaction patterns. The ability to understand user behavior, record and interpret user interaction signals, gauge user satisfaction and incorporate user feedback gives online systems a vast treasure trove of insights for improvement and experimentation. More generally, the ability to learn from user interactions promises pathways for solving a number of problems and improving user engagement and satisfaction.
+      </p>
+      <p>
+        Understanding and learning from user interactions incolves a number of different aspects - from understanding user intent and tasks, to developing user models and personalization services. A user's understanding of their need and the overall task develop as they interact with the system. Supporting the various stages of the task involves many aspects of the system, e.g. interface features, presentation of information, retrieving and ranking. Often, online systems are not specifically designed to support users in successfully accomplishing the tasks which motivated them to interact with the system in the first place. Beyond understanding user needs, learnign from user interactions involves developing the right metrics and expiermentation systems, understanding user interaction processes, their usage context and designing interfaces capable of helping users.
+      
+        Learning from user interactions becomes more important as new and novel ways of user interactions surface. There is a gradual shift towards searching and presenting the information in a conversational form. Chatbots, personal assistants in our phones and eyes-free devices are being used increasingly more for different purposes, including information retrieval and exploration. With improved speech recognition and information retrieval systems, more and more users are increasingly relying on such digital assistants to fulfill their information needs and complete their tasks. Such systems rely heavily on quickly learnig from past interactions and incorporating implicit feedback signals into their models for rapid development.
+      </p>
+
+      <p>Learning from User Interactions will be a highly interactive full day workshop that will provide a forum for academic and industrial researchers working at the intersection of user understanding, search tasks, conversational IR and user interactions. The purpose is to provide an opportunity for people to present new work and early results, brainstorm different use cases, share best practices, and discuss the main challenges facing this line of research.</p>
+
+      <br>
 
 
-      <h2 id="speakers-affliations">Keynote Speakers</h2>
 
-      <div class="row">
-        <div class="col-lg-6"><img src="img/j.wang.jpg" style="float: left; margin: 0 20px 0 0;" /><p>Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text </p></div>
-
-        <div class="col-lg-6"><img src="img/x.shen.jpg" style="float: left; margin: 0 20px 0 0;" /><p><a href="http://sifaka.cs.uiuc.edu/xshen/">Dr Xuehua Shen</a> text text text text text text text text </p></div>
-      </div>
-
-      <div class="row">
-      <div class="col-lg-6"><img src="img/s.seljan.jpg" style="float: left; margin: 0 20px 0 0;" /><p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p></div>
-
-      <div class="col-lg-6"><img src="img/s.yuan.jpg" style="float: left; margin: 0 20px 0 0;" /><p><a href="http://www.yuan-shuai.info">Shuai Yuan</a> text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p></div>
-      </div>
 
 
 	  	<h2 id="topics">Topics</h2>
 
 	  	<ul>
-  <li><strong>Knowledge Base Construction</strong>:
+  <li><strong>User Needs & Tasks Understanding</strong>:
     <ul>
-      <li>information extraction: named entity recognition, relation extraction, entity resolution, synonym mining;</li>
-      <li>ontology construction; information integration; schema alignment, ontology alignment;</li>
-      <li>tools and systems for automated knowledge base construction;</li>
-      <li>structured prediction methods on text, sequence labeling methods on text;</li>
-      <li>distant supervision, weak supervision techniques for text;</li>
-      <li>Human-in-the-loop techniques for KB construction.</li>
+      <li>User intent analysis/prediction</li>
+      <li>User goals & missions</li>
+      <li>Task identification</li>
+      <li>Task aware suggestions & recommendations</li>
     </ul>
   </li>
   <br>
-  <li><strong>Mining and Reasoning over Knowledge Bases</strong>:
+  <li><strong>User Modeling & Personalization</strong>:
     <ul>
-      <li>structured search, KB querying, semantic search;</li>
-      <li>representation learning on network/graph, knowledge graph embedding, knowledge base completion/population, link prediction;</li>
-      <li>knowledge-based systems, probabilistic knowledge bases, graph databases.</li>
+      <li>Short and Long-term User Modelling</li>
+      <li>Personalization</li>
+      <li>Diversification</li>
+      <li>Coherence</li>
     </ul>
   </li>
   <br>
-  <li><strong>Knowledge Base-related Applications</strong>:
+  <li><strong>Metrics and Evaluation </strong>:
     <ul>
-      <li>KB-based QA, hybrid QA, QA with open-domain facts;</li>
-      <li>Injecting rule/logic into recommendation systems, recommendation with knowledge bases;</li>
-      <li>web search using knowledge bases, search by example; User study in KB-related applications, user interface, best practices.</li>
+      <li>Metrics based on user interactions</li>
+      <li>User engagement metrics design</li>
+      <li>Evaluation mechanisms</li>
+      <li>User satisfaction prediction</li>
+      <li>Controlled laboratory study</li>
+      <li>Online metrics</li>
+      <li>Test collection</li>
+
+    </ul>
+  </li>
+  <br>
+  <li><strong>User Interaction Processes & Context </strong>:
+    <ul>
+      <li>User Journey Optimization</li>
+      <li>Evolution of search process</li>
+      <li>Stages of user interactions</li>
+      <li>User journey through the system</li>
+      <li>Leveraging contextual signals</li>
+      <li>Learning for user interaction optimization: algorithms, frameworks & system designs</li>
+    </ul>
+  </li>
+  <br>
+  <li><strong>Intelligent interface designs</strong>:
+    <ul>
+      <li>Adaptive personal digital assistants</li>
+      <li>Tailored decision support</li>
+      <li>Adaptive collaboration support</li>
+    </ul>
+  </li>
+  <br>
+  <li><strong>Applications</strong>:
+    <ul>
+      <li>Conversational search, chatbots, digital assistants</li>
+      <li>Contextual Advertising</li>
+      <li>E-commerce recommendations</li>
+      <li>Customer Support</li>
+      <li>Intelligent interfaces</li>
+      <li>Personal search</li>
+      <li>Case studies of real world implementations</li>
     </ul>
   </li>
 </ul>
@@ -100,6 +135,27 @@
 
     
     <br>
+
+    <h2 id="speakers-affliations">Keynote Speakers</h2>
+
+    TBA
+    <br>
+
+      <!--
+      <div class="row">
+        <div class="col-lg-6"><img src="img/" style="float: left; margin: 0 20px 0 0;" /><p>Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text Text text </p></div>
+
+        <div class="col-lg-6"><img src="img/" style="float: left; margin: 0 20px 0 0;" /><p><a href=""></a> text text text text text text text text </p></div>
+      </div>
+
+      <div class="row">
+      <div class="col-lg-6"><img src="img/" style="float: left; margin: 0 20px 0 0;" /><p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p></div>
+
+      <div class="col-lg-6"><img src="img/" style="float: left; margin: 0 20px 0 0;" /><p><a href=""></a> text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p></div>
+      </div>
+    -->
+
+
 
 
     <h2 id="dates">Important Dates</h2>
@@ -114,16 +170,52 @@
 
     <h2 id="submission">Submission</h2>
     <p>
-      All workshop submissions must be formatted according to ACM SIG Proceedings template, and we welcome submissions either long or short format:<br>
+      All workshop submissions must be formatted according to <a href="http://www.acm.org/publications/proceedings-template">ACM SIG Proceedings </a> template. We welcome submissions in either long or short format:<br>
       <ul>
       <li><strong>Long Paper: </strong>8 pages</li>
       <li><strong>Short Paper: </strong>4 pages</li>
       <li><strong>Demo Papers </strong>2 pages</li>
     </ul>
-      Authors should submit original papers in PDF format through the Easychair system at: todo
+      Authors should submit original papers in PDF format through the Easychair system. 
     </p>
 
+    <p>
+    This is a workshop proper where discussion is central, and all attendees are active participants. The workshop will include keynote talks to set the stage and ensure all attendees are on the same page. A small number of contributed papers will be selected for short oral presentation (15-10 minutes), all other papers have a 2 minute boaster, and all papers are presented as poster in an interactive poster session. 
+  </p>
 
+  <p>
+    The results will be disseminated in various ways:
+    </p>
+      <ul>
+      <li>A high quality, peer reviewed workshop proceedings, published in the <a href="http://ceur-ws.org/">http://ceur-ws.org/</a> workshop proceedings series.</li>
+      <li>A report on the results of the workshop in the ACM SIGIR Forum of June 2018.</li>
+      <li>If the outcome lives up to our high expectations, we will consider a special issue in an appropriate journal.</li>
+      </ul>
+    </p>
+  </p>
+
+  <br>
+
+  <h2 id = "program">Program</h2>
+  TBA
+  <br>
+  
+
+
+  <h2 id="organizers">Organizers</h2>
+
+    <ol>
+  <li>
+    
+    <p><a href="https://sites.google.com/site/emineyilmaz/">Emine Yilmaz</a> (University College London; Alan Turing Institute)</p>
+  </li>
+  <li>
+    <p><a href="http://www.rishabhmehrotra.com">Rishabh Mehrotra</a> (University College London)</p>
+  </li>
+  <li>
+    <p><a href="http://research.microsoft.com/en-us/um/people/hassanam/">Ahmed Hassan Awadallah</a> (Microsoft Research)</p>
+  </li>
+</ol>
       
 	  
       <div class="row text-right">
